@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E&M Marketing</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(180deg, #001f40 0%, #000000 100%);
+    color: #ffffff;
+    scroll-behavior: smooth;
+  }
+
+  a { text-decoration: none; color: inherit; }
+
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: rgba(0,0,0,0.9);
+    box-shadow: 0 0 30px #001f40;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  header h1 {
+    font-size: 2.5em;
+    color: #00aaff;
+    text-shadow: 0 0 20px #00aaff, 0 0 40px #00aaff88;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+
+  nav { display: flex; justify-content: center; flex: 1; }
+  nav a { margin: 0 25px; font-size: 1em; color: #c0c0c0; transition: color 0.3s ease; }
+  nav a:hover { color: #00aaff; }
+
+  /* Hero */
+  .hero { text-align: center; padding: 100px 20px 60px 20px; }
+  .hero h2 { font-size: 2em; color: #00aaff; margin-bottom: 20px; }
+  .hero p { font-size: 1.2em; color: #c0c0c0; max-width: 700px; margin: 0 auto; }
+
+  /* Section Titles */
+  section h2 { text-align: center; font-size: 2em; margin-bottom: 40px; margin-top: 80px; color: #001f40; }
+
+  /* Shared Card Style */
+  .card {
+    background-color: #111111;
+    padding: 40px 20px;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0 0 30px #001f4044;
+    transition: transform 0.3s ease, opacity 0.8s ease;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  .card h3 {
+    color: #001f40;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .card p { color: #c0c0c0; font-size: 1em; }
+  .card.visible { opacity: 1; transform: translateY(0); }
+
+  /* Row Layout */
+  .row { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; padding: 40px 20px; }
+
+  /* Contact Section */
+  #contact .contact-form {
+    background-color: #111111;
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #001f4044;
+  }
+  #contact .contact-form h2 { color: #001f40; margin-bottom: 20px; }
+  #contact .contact-form p a { color: #00aaff; }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #000000;
+    box-shadow: 0 -5px 30px #001f4044;
+  }
+
+  @media(max-width:768px){ .row { flex-direction: column; align-items: center; } nav { flex-direction: column; gap: 15px; } }
+</style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>E&M Marketing</h1>
+    <nav>
+      <a href="#feedback">Client Feedback</a>
+      <a href="#services">Services</a>
+      <a href="#our-services">Our Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Scaling Local Businesses & E-Com Brands Through Paid Ads</h2>
+    <p>We create high-performing campaigns on Meta Ads and Google Ads while optimizing websites and accounts for maximum ROI.</p>
+  </section>
+
+  <!-- Stats -->
+  <section id="stats">
+    <h2>Chiffres clés</h2>
+    <div class="row">
+      <div class="card"><h3>+200%</h3><p>ROAS</p></div>
+      <div class="card"><h3>45%</h3><p>Sales Increase</p></div>
+      <div class="card"><h3>100%</h3><p>Transparent Reports</p></div>
+    </div>
+  </section>
+
+  <!-- Feedback -->
+  <section id="feedback">
+    <h2>Client Feedback</h2>
+    <div class="row">
+      <div class="card"><h3>Local Business</h3><p>“E&M Marketing boosted our foot traffic and online leads in just 3 weeks!” – Local Coffee Shop</p></div>
+      <div class="card"><h3>E-commerce Brand</h3><p>“Their Meta & Google Ads campaigns increased our sales by 45% in under a month!” – Fashion Label</p></div>
+      <div class="card"><h3>Other Clients</h3><p>“Professional, creative, and measurable results – highly recommended!” – Beauty Products Company</p></div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>Services</h2>
+    <div class="row">
+      <div class="card"><h3>Meta Ads</h3><p>Targeted campaigns on Facebook and Instagram to reach your audience effectively.</p></div>
+      <div class="card"><h3>Google Ads</h3><p>Search and display campaigns to attract high-intent customers.</p></div>
+      <div class="card"><h3>Website Optimization</h3><p>Improving your website’s performance, SEO, and user experience to increase conversions.</p></div>
+    </div>
+  </section>
+
+  <!-- Our Services -->
+  <section id="our-services">
+    <h2>Our Services</h2>
+    <div class="row">
+      <div class="card"><h3>Double Your ROAS</h3><p>We guarantee strategies that can double your ROAS in less than 1 month.</p></div>
+      <div class="card"><h3>Conversion Boost</h3><p>Optimizing ads and websites to increase lead generation and sales conversion rates.</p></div>
+      <div class="card"><h3>Creative Campaigns</h3><p>Eye-catching ads and content that capture attention and engagement.</p></div>
+      <div class="card"><h3>Monthly Reports</h3><p>We provide detailed monthly reports to track your growth and ROI.</p></div>
+      <div class="card"><h3>Contact Us</h3>
+        <p>WhatsApp: <a href="https://wa.me/5794891170">+5794891170</a></p>
+        <p>Instagram: <a href="https://instagram.com/ethan__marketing">@ethan__marketing</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-form">
+      <h2>Get in Touch</h2>
+      <p>📱 WhatsApp: <a href="https://wa.me/5794891170">+5794891170</a></p>
+      <p>📸 Instagram: <a href="https://instagram.com/ethan__marketing">@ethan__marketing</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 E&M Marketing. All rights reserved.
+  </footer>
+
+<script>
+  // Intersection Observer for fade-in animation
+  const cards = document.querySelectorAll('.card');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+  cards.forEach(card => observer.observe(card));
+</script>
+
+</body>
+</html>
